@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url("—Pngtree—stylish\ green\ wavy\ shapes\ free_8513958.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-top: 8.5rem;
+}
+
+.italy {
+  font-weight: 600;
+}
+
+.middle-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
+}
+
+#input-sleep-time,
+#input-leaving-time {
+  height: 4rem;
+  width: 10rem;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.button-confirm {
+  height: 3rem;
+  width: 6rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 100px;
+  border: 2px solid green;
+  transition: 0.3s;
+}
+
+.button-confirm:hover {
+  color: white;
+  background-color: green;
+  transition: 0.3s;
+}
+
+#reseting-margin {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.slide-from-right {
+  transition: 0.6s;
+  margin-left: 130rem;
+}
+
+.leaving-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* zrobic tu style do results */
+
+.bed-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#alarm-time,
+#bed-time {
+  border: 2px solid green;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-underline {
+  border-bottom: 3px solid green;
+}
+
+#bottom-stat {
+  margin-top: 2vh;
+}
+
+.slide-from-right-results {
+  margin-left: 300rem;
+}
+
+.red {
+  color: rgb(112, 13, 13);
+  text-align: center;
+}
+
+@media (max-width: 925px) {
+  body {
+    background-image: none;
+    touch-action: pan-y;
+    overflow: auto;
+  }
+
+  .confirm {
+    margin-bottom: 2rem;
+  }
+
+  #upper-br {
+    display: none;
+  }
+
+  .bed-div {
+    margin-top: 2rem;
+  }
+
+  .heading {
+    margin-top: 2rem;
+  }
+
+  #reseting-margin {
+    margin-top: 2rem;
+  }
+
+  .middle-section {
+    text-align: center;
+  }
+}
+
+/* ogarnac zeby to bylo responsywne. */

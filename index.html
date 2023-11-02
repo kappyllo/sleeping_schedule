@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep sched</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="middle-section">
+      <h1 class="heading">
+        How many hours <br />
+        you want to <span class="italy"><i>sleep</i></span
+        >?
+      </h1>
+      <div class="sleep-time">
+        <input type="number" name="" id="input-sleep-time" />
+      </div>
+      <p class="hidden red" id="not-filled-sleep-time">
+        You have to fill out sleeping hours!
+      </p>
+      <div class="confirm">
+        <button type="button" class="button-confirm">Start</button>
+      </div>
+      <div class="time-before-exit slide-from-right">
+        <h2 class="heading" id="reseting-margin">
+          How much <span class="italy"><i>time</i></span> you need <br />
+          to get ready?
+        </h2>
+        <div class="form">
+          <input type="radio" name="time-before" value="60" /> 1 Hour
+          <input type="radio" name="time-before" value="90" /> 1,5 Hour
+          <input type="radio" name="time-before" value="120" /> 2 Hours
+          <input type="radio" name="time-before" value="150" /> 2,5 Hours
+        </div>
+        <p class="hidden red" id="not-filled-getting-time">
+          You have to choose one of the options!
+        </p>
+      </div>
+      <div class="leaving-time slide-from-right">
+        <h3 class="heading" id="reseting-margin">
+          What time you're <span class="italy"><i>leaving</i></span
+          >?
+        </h3>
+        <div class="leaving-time">
+          <input type="time" name="" id="input-leaving-time" />
+        </div>
+        <p class="hidden red" id="not-filled-leaving-time">
+          You have to choose your leaving time!
+        </p>
+        <div class="confirm">
+          <button type="button" class="button-confirm" id="confirm-btn">
+            Get result
+          </button>
+        </div>
+      </div>
+      <div class="results hidden">
+
+    </div>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>
